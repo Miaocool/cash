@@ -1,0 +1,296 @@
+//
+//  PrefixHeader.pch
+//  yyxb
+//
+//  Created by 杨易 on 15/11/9.
+//  Copyright (c) 2015年 杨易. All rights reserved.
+//
+
+#ifndef yyxb_PrefixHeader_pch
+#define yyxb_PrefixHeader_pch
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+#define isIOS7	( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
+
+
+//服务器前缀
+//#define APPHost @"http://myg.ishangwai.com/?" //ce
+
+//#define APPHost @"http://pgmyg.miyungou.com/?" //host3
+
+#define APPHost @"http://www.miyungou.com/?" //sheng
+
+
+#define XinLang @"http://lqdb.buguyuan.com" //新浪微博回调
+
+#define AwardTip          @"/app/home/zjdhy" //中奖提示
+
+#define Registered          @"/app/user/sendCode"           //验证码注册
+#define RegisteredData      @"/app/user/addUser"           //资料注册
+#define Login               @"/app/user/userLogin"            //登陆
+#define ExitLogin           @"/app/user/cook_end"         //退出登陆
+
+
+#define UserData            @"/app/home/myhome"           //用户资料
+#define ModifyName          @"/app/home/nickname"         //修改昵称
+#define ModifyImage         @"/app/home/editPhoto"        //修改头像
+#define shuangchuan         @"/app/home/uploadimg"        //上传图片
+#define ModifyPhone         @"/app/home/phone"            //5.4.3 修改手机号
+#define ModifyEditPhone     @"/app/home/editPhone"        //5.4.3.1  编辑手机
+#define AddressAlter        @"/app/home/site"             //5.4.4 地址管理
+#define SaveAddress         @"/app/home/modification"      //5.4.5 保存地址
+#define DeleteAddress       @"/app/home/remove"            //5.4.7 删除地址
+#define Share               @"/app/home/share"          //推广分享
+#define MyShaidan          @"/app/home/myShaidan" //我的晒单
+
+#define Bar                 @"/app/mobile/myg_column"            //栏目
+#define TakepateNote        @"/app/mobile/buyrecords"      //所有的参与记录
+#define Announced           @"/app/mobile/lottery"        //最新揭晓
+#define Before             @"/app/mobile/agoshop" //往期揭晓
+#define infmotion           @"/app/mobile/recharge"  //充值提示
+
+#define AlterSign   @"/app/home/qiandao"  //修改----确认签到
+#define Signin      @"/app/home/dj_qiandao"       //签到接口
+#define SigninInfo      @"/app/home/tishi"  //签到提示
+
+
+#define Fenlei            @"/app/mobile/category" //分类
+#define changjian         @"/app/mobile/article" //常见问题
+#define find               @"/app/mobile/find" //发现列表
+#define PictureDetail       @"/app/mobile/content" //图文详情
+#define Userindex          @"/app/mobile/userindex" //个人中心页
+#define UserBuyList         @"/app/mobile/getUserBuyList" //他人的购买记录
+
+
+#define tongzhi            @"/app/home/tongzhi" //通知列表
+#define ChoseProvine        @"/app/home/provine"            //选择省份
+#define RecordList          @"/app/home/orderlist"          //中奖纪录
+#define SureRecordList      @"/app/home/peisong"         // (确定地址)我的中奖记录
+#define AccomplishRecordList  @"/app/home/accomplish"         // ( 完成订单 )我的中奖记录
+#define RedBao              @"/app/home/hongbao"              //我的红包
+#define GetRedBao           @"/app/home/gethongbao"           //兑换红包
+#define ExchangeRecord      @"/app/home/record"              //兑换记录纪录
+#define ExchangeScore       @"/app/home/getjifen"            //兑换积分
+#define duihuan             @"/app/home/duihuan"            //我要兑换
+#define MyShaidan           @"/app/home/myShaidan"        //我的晒单
+#define tongzhi             @"/app/home/tongzhi"         //通知列表
+#define GetUserrecharge      @"/app/home/userrecharge"    //充值
+#define UserRecharge        @"/app/home/getUserRecharge" //充值记录
+
+#define xinchongzhiData     @"/app/home/ap_userrecharge" //新充值数据
+
+#define Recharge            @"/app/home/addmoney"       //立即充值
+#define WebRecharge            @"/app/home/wapaddmoney"   //web充值
+
+#define appCallBack          @"/app/home/appCalBack"       //立即充值回调
+#define CheckVersion        @"/app/home/version"       //版本更新
+#define GoOnVersion        @"/app/home/version"       //版本升级
+#define feedback          @"/app/home/feedback"  //意见反馈
+#define AboutUs            @"/app/home/about"             //关于一元寻宝
+#define serviceAgreement      @"/app/home/service"       //服务协议
+
+//#define Userrecharge        @"/app/home/userrecharge" //立即充值
+#define myWishList               @"/app/home/wish"  //心愿记录
+#define tianjiaWish              @"/app/home/addwish" //添加心愿
+
+#define three_distribution    @"/app/home/three_distribution"  //三级分销列表
+#define distribution_ranking   @"/app/home/distribution_ranking"   //三级分销排行榜
+#define distribution_role    @"/app/home/distribution_role"        //三级分销规则
+
+#define Findpass           @"/app/user/findpass" //密码修改（检测手机号码
+
+#define Send_code          @"/app/user/send_code" //密码修改（发送验证码）
+#define Checkcode          @"/app/user/_checkcode" //密码修改（判断验证码是否输入正确）
+
+#define Editpass           @"/app/user/editpass" //密码修改（修改密码）
+#define ThirdLogin           @"/app/user/callback" //第三方登录
+
+#define ShufflingFigure     @"/app/mobile/slides"         //轮播图
+#define Notice              @"/app/mobile/notice"         //1.1.3首页公告
+
+#define Goods               @"/app/mobile/glist"           //商品列表  历史记录添加/删除（新添加）
+
+
+#define GoodsDetails        @"/app/mobile/detail"          // 商品详情
+
+#define SearchData          @"/app/mobile/search"         //搜索
+#define find_search_record       @"/app/home/find_search_record"   // 历史记录查询
+#define delete_search_record       @"/app/home/delete_search_record"   // 历史记录删除
+
+
+//#define Bar                 @"/app/mobile/column"            //栏目
+#define TakepateNote        @"/app/mobile/buyrecords"      //所有的参与记录
+#define Announced           @"/app/mobile/lottery"        //最新揭晓
+#define Before              @"/app/mobile/agoshop"         //往期揭晓
+#define Fenlei              @"/app/mobile/category"         //分类
+#define changjian           @"/app/mobile/article"         //常见问题
+#define find                @"/app/mobile/find"           //发现列表
+#define PictureDetail       @"/app/mobile/content"        //图文详情
+#define UserBuyList         @"/app/mobile/getUserBuyList" //他人的购买记录
+#define  Callback            @"/app/cart/qiantai"         //支付回调
+
+#define Ordershare            @"/app/shaidan/shaidan" //晒单列表
+#define Goodshare            @"/app/shaidan/sp_shaidan" //一个商品晒单
+//sd_shaidan
+
+#define Ordersharedetail      @"/app/shaidan/detail" //晒单详情
+#define ShoppingList          @"/app/cart/cartlist" //清单
+
+#define MyBuyList            @"/app/home/myBuyList" //我的寻宝纪录
+#define Settlement           @"/app/cart/pay"        //结算
+#define xinjiesuan           @"/app/cart/ap_pay"   //新的结算
+
+#define  Pay                 @"/app/cart/paysubmit" //确定支付
+
+#define  WebPay                 @"/app/cart/wappsubmit"  //web
+
+#define Addshaidan           @"/app/home/singleinsert" //添加晒单
+
+#define Myhsaret             @"/app/home/sharet" //我的推广
+
+#define Sendphoneyzm         @"/app/home/phone" //修改手机（发送验证码）
+
+#define EditPhone            @"/app/home/editPhone" //修改手机确定修改
+
+
+#define CalResult          @"/app/mobile/calResult" //查看计算方式
+
+
+#define GetUrl          @"/app/mobile/getUrl" //获取时时彩的url
+
+#define Buynumber          @"/app/mobile/buynumber" //寻宝号码
+
+#define BuyDetail          @"/app/mobile/buyDetail" //寻宝详情
+
+
+#define ShareList          @"/app/home/shareList" //我的收益
+
+
+#define ShareZan          @"/app/shaidan/dian_zan" //晒单点赞
+
+#define Comment          @"/app/shaidan/comment" //评论列表
+#define AddComment          @"/app/shaidan/addcomment" //评论列表
+#define Tishi          @"/app/mobile/tishi" //计算详情提示
+
+#define NewGoods          @"/app/mobile/newproduct" //新品推荐
+
+#define Userlike          @"/app/mobile/userlike" //猜你喜欢
+#define Zhaomu          @"/app/mobile/zhaomu" //招募徒弟
+#define Zhaorule          @"/app/mobile/zhaorule (tdrecord)" //招募徒弟纪录
+
+#define Zhaomubidu          @"/app/mobile/tudi" //招募徒弟必读
+
+#define Newbag          @"/app/home/new_bag" //新手红包
+
+#define VipShop          @"/app/mobile/vipShop" //VIP专区
+
+#define ZhaomuGuize          @"/app/mobile/zhaorule" //招募规则
+
+#define Tudijilu          @"/app/mobile/tdrecord" //徒弟纪录
+
+#define Tudibangdan          @"/app/mobile/tdlist" //徒弟榜单
+
+#define ZhaomuWenzhang          @"/app/mobile/td_article" //招募文章
+
+#define Gethongbao          @"/app/home/get_hongbao" //领取新手红包
+
+#define AddTuiGuang          @"/app/home/addTuiGuang" // 添加推广返回状态
+
+#define Detaileshare          @"/app/home/detaile_share" //详情分享
+
+#define Prompt          @"/app/mobile/prompt" //启动时从服务器动态获取推送key
+#define DisanfangKongzhi           @"/app/mobile/morevalid"  //di san fang
+
+#define ThirdListCity       @"/app/home/sheng"  //城市三级联动
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#define MSW ([UIScreen mainScreen].bounds.size.width)
+
+#define MSH ([UIScreen mainScreen].bounds.size.height)
+
+#define NavColor   [UIColor colorWithHex:@"#d3112f"]
+#define MainColor   RGBCOLOR(222, 47, 80) //主色
+#define FontBlue    [UIColor colorWithRed:106.0/255.0 green:192.0/255.0 blue:255.0/255.0 alpha:1]
+#define DefaultImage @"熊猫默认加载"
+#define BigFont 14  //大
+#define MiddleFont 12 //中
+#define SmallFont 10 //小
+
+#define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+///////////////////////////////////////////////
+#import "MDYAFHelp.h"
+#import "PullingRefreshTableView.h"
+#import "LoginViewController.h"
+#import "UserDataSingleton.h"                                    //单例
+#import "postBLL.h"
+#import "UIColor+Addition.h"   //色值单例
+#import "UIView+Addition.h"
+#import "ShoppingModel.h"
+#import "UIImageView+WebCache.h"
+#import "NoDataView.h"  //没有信息加载
+#import "HomeViewController.h" //首页
+#import "SVProgressHUD.h"  //加载
+#import "NSString+WPAttributedMarkup.h"
+#import "WPAttributedStyleAction.h"
+
+#import "UIView+WZViewShowHud.h"
+#import "NoNetwork.h"
+#if DEBUG
+#define DebugLog(...) NSLog(__VA_ARGS__)
+#define DebugMethod() NSLog(@"%s in %@",__func__,[self class])
+#else
+#define DebugLog(...)
+#define DebugMethod()
+#endif
+
+//字体位置
+#define UITextAlignmentLeft                 NSTextAlignmentLeft
+#define UITextAlignmentCenter               NSTextAlignmentCenter
+#define UITextAlignmentRight                NSTextAlignmentRight
+
+
+//-- MD_MULTILINE_TEXTSIZE  字体内容多少判断label的size
+#define MD_MULTILINE_TEXTSIZE(text, font, maxSize, mode) [text length] > 0 ? [text \
+boundingRectWithSize:maxSize options:(NSStringDrawingUsesLineFragmentOrigin) \
+attributes:@{NSFontAttributeName:font} context:nil].size : CGSizeZero;
+
+
+#define iPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+
+
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone6P ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+
+
+
+#define IPhone4_5_6_6P(a,b,c,d) (CGSizeEqualToSize(CGSizeMake(320, 480), [[UIScreen mainScreen] bounds].size) ?(a) :(CGSizeEqualToSize(CGSizeMake(320, 568), [[UIScreen mainScreen] bounds].size) ? (b) : (CGSizeEqualToSize(CGSizeMake(375, 667), [[UIScreen mainScreen] bounds].size) ?(c) : (CGSizeEqualToSize(CGSizeMake(414, 736), [[UIScreen mainScreen] bounds].size) ?(d) : 0))))
+
+//是否为空或是[NSNull null]
+#define NotNilAndNull(_ref)  (((_ref) != nil) && (![(_ref) isEqual:[NSNull null]]))
+#define IsNilOrNull(_ref)   (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]))
+
+//字符串是否为空
+#define IsStrEmpty(_ref)    (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]) ||([(_ref)isEqualToString:@""]))
+//数组是否为空
+#define IsArrEmpty(_ref)    (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]) ||([(_ref) count] == 0))
+//字符串是否合法（只用于定位）
+#define IsLegitimate(_ref)  (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]) ||([(_ref)isEqualToString:@""]) || ([(_ref)isEqualToString:@"0"]))
+//字典获取
+#define EncodeFormDic(dic,key) [dic[key] isKindOfClass:[NSString class]] ? dic[key] :([dic[key] isKindOfClass:[NSNumber class]] ? [dic[key] stringValue]:@"")
+//释放定时器
+#define TT_INVALIDATE_TIMER(__TIMER) \
+{\
+[__TIMER invalidate];\
+__TIMER = nil;\
+}
+
+#endif
